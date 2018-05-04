@@ -1,23 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 body{
-    text-align: center
+    text-align: center;
+    background-color: rgb(203, 213, 215);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#searchSection{
+    margin: 2% 15% 0% 15%;
 }
 
 /* Inputs */
 .primary-btn-input{
+    min-width:185px;
     background-color: rgb(43, 153, 140);
     color:white;
 }
 
 .primary-txt-input{
-    border: 1px solid rgba(206, 210, 211, 0.5)
-}
-
-.primary-txt-input ::-webkit-input-placeholder{
-    color: rgba(206, 210, 211, 1)
+    border: 1px solid rgba(206, 210, 211, 0.7);
 }
 
 /* Texts */
 .primary-text{
     color:black;
 }
+
+/* Colours */
+.bgc-white{
+    background-color: white;
+}
+
+/* PlaceHolder */
+::-webkit-input-placeholder { color: rgba(206, 210, 211, 0.7) !important;  }
+
+/* Firefox 18- */ 
+:-moz-placeholder { color: rgba(206, 210, 211, 0.7) !important; }
+
+/* Firefox 19+ */ 
+::-moz-placeholder {  color: rgba(206, 210, 211, 0.7) !important; }
+
+/* Microsoft Edge */
+::-ms-input-placeholder { color:rgba(206, 210, 211, 0.7) !important; }
+
+/* Internet Explorer 10-11 */
+::-ms-input-placeholder { color: rgba(206, 210, 211, 0.7) !important; }
