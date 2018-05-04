@@ -3,6 +3,7 @@
 
 body{
     text-align: center;
+    min-width: 217;
     background-color: rgb(203, 213, 215);
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 }
@@ -46,3 +47,21 @@ body{
 
 /* Internet Explorer 10-11 */
 ::-ms-input-placeholder { color: rgba(206, 210, 211, 0.7) !important; }
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1200px) {
+    .primary-btn-input{
+        min-width:130px;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 767px) {
+    #searchSection{
+        margin: 5% 5% 0% 5%;
+    }
+
+    .primary-btn-input{
+        min-width:185px;
+    }
+  }
