@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    text-align: center
+}
+
+/* Inputs */
+.primary-btn-input{
+    background-color: rgb(43, 153, 140);
+    color:white;
+}
+
+.primary-txt-input{
+    border: 1px solid rgba(206, 210, 211, 0.5)
+}
+
+.primary-txt-input ::-webkit-input-placeholder{
+    color: rgba(206, 210, 211, 1)
+}
+
+/* Texts */
+.primary-text{
+    color:black;
+}
