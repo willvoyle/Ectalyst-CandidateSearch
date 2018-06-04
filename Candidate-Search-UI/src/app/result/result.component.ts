@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SearchQuery } from '../search-query';
+import { SearchService } from '../search.service';
 
 @Component({
   selector: 'app-result',
@@ -9,7 +10,9 @@ import { SearchQuery } from '../search-query';
 export class ResultComponent implements OnInit {
   private _searchQuery: SearchQuery;
 
-  constructor() {}
+  resultUrl: string;
+
+  constructor(private searchService: SearchService) {}
 
   ngOnInit() {}
 
@@ -22,5 +25,7 @@ export class ResultComponent implements OnInit {
   }
 
   search(searchQuery: SearchQuery) {
+    this.resultUrl = this.searchService.getQueryLink(searchQuery);
+    $('#resultFrame').attr('src', this.resultUrl);
   }
 }
