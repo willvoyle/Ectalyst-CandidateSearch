@@ -1,67 +1,91 @@
 /* You can add global styles to this file, and also import other style files */
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-body{
-    text-align: center;
-    min-width: 217;
-    background-color: rgb(203, 213, 215);
-    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
+body {
+  text-align: center;
+  min-width: 217;
+  background-color: rgb(203, 213, 215);
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-#searchSection{
-    margin: 2% 15% 0% 15%;
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+#searchSection {
+  margin: 2% 15% 0% 15%;
 }
 
 /* Inputs */
-.primary-btn-input{
-    min-width:185px;
-    background-color: rgb(43, 153, 140);
-    color:white;
+.primary-btn-input {
+  min-width: 185px;
+  background-color: rgb(43, 153, 140);
+  color: white;
 }
 
-.primary-txt-input{
-    border: 1px solid rgba(206, 210, 211, 0.7);
+.primary-txt-input {
+  border: 1px solid rgba(206, 210, 211, 0.7);
 }
 
 /* Texts */
-.primary-text{
-    color:black;
+.primary-text {
+  color: black;
 }
 
 /* Colours */
-.bgc-white{
-    background-color: white;
+.bgc-white {
+  background-color: white;
 }
 
 /* PlaceHolder */
-::-webkit-input-placeholder { color: rgba(206, 210, 211, 0.7) !important;  }
+::-webkit-input-placeholder {
+  color: rgba(206, 210, 211, 0.7) !important;
+}
 
-/* Firefox 18- */ 
-:-moz-placeholder { color: rgba(206, 210, 211, 0.7) !important; }
+/* Firefox 18- */
+:-moz-placeholder {
+  color: rgba(206, 210, 211, 0.7) !important;
+}
 
-/* Firefox 19+ */ 
-::-moz-placeholder {  color: rgba(206, 210, 211, 0.7) !important; }
+/* Firefox 19+ */
+::-moz-placeholder {
+  color: rgba(206, 210, 211, 0.7) !important;
+}
 
 /* Microsoft Edge */
-::-ms-input-placeholder { color:rgba(206, 210, 211, 0.7) !important; }
+::-ms-input-placeholder {
+  color: rgba(206, 210, 211, 0.7) !important;
+}
 
 /* Internet Explorer 10-11 */
-::-ms-input-placeholder { color: rgba(206, 210, 211, 0.7) !important; }
+::-ms-input-placeholder {
+  color: rgba(206, 210, 211, 0.7) !important;
+}
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1200px) {
-    .primary-btn-input{
-        min-width:130px;
-    }
+  .primary-btn-input {
+    min-width: 130px;
   }
-  
-  /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 767px) {
-    #searchSection{
-        margin: 5% 5% 0% 5%;
-    }
+}
 
-    .primary-btn-input{
-        min-width:185px;
-    }
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 767px) {
+  #searchSection {
+    margin: 5% 5% 0% 5%;
   }
+
+  .primary-btn-input {
+    min-width: 185px;
+  }
+}

@@ -8,6 +8,7 @@ export class SearchService {
   constructor() {}
 
   getQueryLink(searchQuery: SearchQuery) {
-    return 'https://www.google.co.uk/search?q=%28"Software+Developer"%2C+"London"%29&oq=%28"Software+Developer"%2C+"London"%29';
+    // tslint:disable-next-line:max-line-length
+    return 'http://ectalyst-cse-linkedin.azurewebsites.net/linkedin-search.html?q=(%22Computer+Science%22)+%2B+(%22London%22)+%2B+(%22Oxford%22)+%2B+(%22Cambridge%22)';
   }
 }

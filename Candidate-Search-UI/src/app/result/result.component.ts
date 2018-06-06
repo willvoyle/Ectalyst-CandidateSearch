@@ -8,8 +8,7 @@ import { SearchService } from '../search.service';
   styleUrls: ['./result.component.css']
 })
 export class ResultComponent implements OnInit {
-  private _searchQuery: SearchQuery;
-
+  searchQuery: SearchQuery;
   resultUrl: string;
 
   constructor(private searchService: SearchService) {}
@@ -19,13 +18,13 @@ export class ResultComponent implements OnInit {
   @Input()
   set searchEvent(searchQuery: SearchQuery) {
     if (searchQuery != null) {
-      this._searchQuery = searchQuery;
-      this.search(searchQuery);
+      this.searchQuery = searchQuery;
+      this.search();
     }
   }
 
-  search(searchQuery: SearchQuery) {
-    this.resultUrl = this.searchService.getQueryLink(searchQuery);
+  search() {
+    this.resultUrl = this.searchService.getQueryLink(this.searchQuery);
     $('#resultFrame').attr('src', this.resultUrl);
   }
 }

@@ -2,6 +2,8 @@
   position: relative;
   height: 0;
   overflow: hidden;
+  border: none;
+  margin: 25px;
 }
 
 /* 16x9 Aspect Ratio */
